@@ -64,7 +64,7 @@ namespace VersionInfo
             p.StartInfo.RedirectStandardOutput = true;//由调用程序获取输出信息
             p.StartInfo.RedirectStandardError = true;//重定向标准错误输出
             p.StartInfo.CreateNoWindow = true;//不显示程序窗口
-            p.Start();//启动程序
+            p.Start();
 
             //向cmd窗口发送输入信息
             p.StandardInput.WriteLine(command);
